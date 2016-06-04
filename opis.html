@@ -22,7 +22,7 @@
           <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
         <!-- ZAČETEK: Ime vaše aplikacije -->
-        <a class="navbar-brand" href="index.html">{ime vaše aplikacije}</a>
+        <a class="navbar-brand" href="index.html">Summoner Health</a>
         <!-- KONEC: Ime vaše aplikacije -->
       </div>
       <div class="collapse navbar-collapse" id="menujska-vrstica">
@@ -47,7 +47,13 @@
             <!-- ZAČETEK: Opis ideje, ki jo aplikacija podpira -->
             <p> Aplikacija omogoča spremljanje rezultatov in uspehov v igri <strong>League of Legends </strong> v povezavi z zdravjem.
                 </p><p class="text-muted">http://eune.leagueoflegends.com/</p>
+                Ciljna publika so igralci igre. Iz tu izhaja tudi ime, saj se v igri vživljajo v lik Summoner-ja.
                 Uporabnik se prijavi v aplikacijo in nato preveri kako vpliva njegovo zdravje na uspeh v igri. 
+                Aplikacija primerja dnevna merjenja z povprečjem zmag in porazov tistega dne. Išče odstopanja od njegovih povprečnih zdravniških rezultatov in povprečnega števila zmag.
+                Tako lahko najde zdravstveni vzrok za uspeh oziroma ne uspeh.
+                Uporabnik naj bi vsak dan izmeril svoje zdravstveno stanje. Le to bi bilo posredovano aplikaciji. Po koncu igranja, bi lahko preveril rezultate na aplikaciji.
+                Po nekem obdobju bi dobil že dovolj točne rezultate ali zdravje vpliva na njegov uspeh in če že, kateri atribut.
+                Na primer: Padec pritiska povzroči, da ima uporabnik 20% slabše rezultate.
                 Namen je osveščati igralce na pomen zdravja in jih motivirati za večjo skrb zanj, ter seveda izboljšati rezultate v igri.
             </p>
             <!-- KONEC: Opis ideje, ki jo aplikacija podpira -->
@@ -59,7 +65,25 @@
           </div>
           <div class="panel-body">
             <!-- ZAČETEK: Uporabljeni zunanji viri podatkov -->
-            <p><strong>TO-DO</strong>: Na tem mestu je navesti zunanji vir podatkov (URL naslov), na kakšen način ste ga uporabili (neposredni API klic, uvožena statična datoteka ipd.) in kaj je bil namen uporabe (kako se vključuje v osnovno idejo aplikacije).</p>
+           
+             <p>Link do League of Legends developer strani:</p><a href="https://developer.riotgames.com/">https://developer.riotgames.com/</a>
+            <p> 
+             Uporabil bom tri API klice. Prvi da pridobim ID igralca. Potreben je njegov uporabniški ime.
+             </p>
+             <a href"
+             https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/Panda%20and%20Box?api_key=cef0d580-375a-4dd3-b690-8790fb75af20
+             "<a>https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/Panda%20and%20Box?api_key=cef0d580-375a-4dd3-b690-8790fb75af20
+             </a><p>
+             Drugi da pridobim seznam odigranih iger na podlagi ID igralca.
+             </p>
+             <a href="  https://euw.api.pvp.net/api/lol/euw/v2.2/matchlist/by-summoner/20857144?api_key=cef0d580-375a-4dd3-b690-8790fb75af20
+            ">
+              https://euw.api.pvp.net/api/lol/euw/v2.2/matchlist/by-summoner/20857144?api_key=cef0d580-375a-4dd3-b690-8790fb75af20
+            </a>
+             <p>
+             In treji da za neko igro ugotvim ali jo je igralec zmagal.
+             </p>
+             <a href="https://euw.api.pvp.net/api/lol/euw/v2.2/match/2695262001?api_key=cef0d580-375a-4dd3-b690-8790fb75af20">https://euw.api.pvp.net/api/lol/euw/v2.2/match/2695262001?api_key=cef0d580-375a-4dd3-b690-8790fb75af20</a>
             <!-- KONEC: Uporabljeni zunanji viri podatkov -->
           </div>
         </div>
@@ -79,8 +103,9 @@
           </div>
           <div class="panel-body">
             <!-- ZAČETEK: Uporabljeni zunanji viri podatkov -->
-            <p><strong>TO-DO</strong>: Na tem mestu je potrebno navesti uporabljeno tehniko vizualizacije podatkov (za pomoč lahko uporabite primer iz <a href="https://github.com/mbostock/d3/wiki/Gallery" target="_blank">D3.js galerije</a>) in zakaj je bila ta tehnika izbrana.</p>
-            <!-- KONEC: Uporabljeni zunanji viri podatkov -->
+            
+            </p>
+             <!-- KONEC: Uporabljeni zunanji viri podatkov -->
           </div>
         </div>
       </div>
